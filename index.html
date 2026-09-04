@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Velasquez · Estudiante de Desarrollo de Software</title>
+  <meta name="description" content="Portafolio de Carlos Mario, estudiante de desarrollo de software en CampusLand. Proyectos, habilidades y contacto.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio">
+        <span class="logo-mark">CM</span>
+        <span class="logo-text">carlos<span>.dev</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-small btn-outline nav-cta">Hablemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Estudiante de Desarrollo de Software en CampusLand</p>
+          <h1 id="hero-title">
+            Hola, soy <span class="accent-text">Carlos Mario Velasquez Angulo</span>.<br>
+          Diseño y construyo hoy el software del futuro.
+          </h1>
+          <p class="hero-lead">
+            Diseño e implemento interfaces fluidas, escalables y funcionales, abarcando todo el ciclo de vida del desarrollo: desde el concepto inicial hasta su despliegue final.
+          </p>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline">Contáctame</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-hidden="true">
+          <div class="panel-header">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="panel-title">perfil.js</span>
+          </div>
+          <pre class="panel-code"><code><span class="tok-key">const</span> <span class="tok-var">desarrollador</span> = {
+  <span class="tok-prop">nombre</span>: <span class="tok-str">"Carlos Mario"</span>,
+  <span class="tok-prop">formacion</span>: <span class="tok-str">"CampusLand"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JavaScript"</span>],
+  <span class="tok-prop">disponible</span>: <span class="tok-bool">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about" aria-labelledby="about-title">
+      <div class="wrap about-inner">
+        <div class="section-heading">
+          <h2 id="about-title">Sobre mí</h2>
+          <p class="section-lead">Un poco de contexto sobre cómo llegué aquí y qué estoy aprendiendo.</p>
+        </div>
+
+        <div class="about-grid">
+          <p class="about-text">
+            Estoy cursando el programa de Desarrollo de Software en <strong>CampusLand</strong>, donde
+            practico a diario resolviendo retos de programación y construyendo proyectos junto a otros
+            estudiantes. Me interesa especialmente el desarrollo web: entender cómo se conecta el diseño
+            de una interfaz con la lógica que la hace funcionar. Este portafolio reúne los primeros
+            proyectos de ese camino.
+          </p>
+
+          <div class="skills">
+            <h3 class="skills-title">Habilidades</h3>
+            <ul class="skill-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Git &amp; GitHub</li>
+              <li>Diseño responsive</li>
+              <li>Trabajo en equipo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="projects-title">Proyectos</h2>
+          <p class="section-lead">Lo que he construido hasta ahora, en solitario y en equipo.</p>
+        </div>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img
+              src="assets/Login admin.jpeg"
+              alt="Vista previa de la interfaz de EventosHub: un listado de tarjetas de eventos con filtros por categoría y fecha"
+              width="640" height="420" loading="lazy" decoding="async">
+          </div>
+
+          <div class="project-body">
+            <div class="project-heading">
+              <h3>EventosHub</h3>
+              <span class="badge">Proyecto en equipo</span>
+            </div>
+
+            <p class="project-desc">
+              Plataforma web para descubrir, publicar y gestionar eventos locales. Los usuarios pueden
+              explorar un catálogo de eventos, filtrarlo por categoría y fecha, y publicar los suyos
+              propios a través de un formulario.
+            </p>
+
+            <ul class="project-features">
+              <li>Catálogo de eventos con filtros por categoría y fecha</li>
+              <li>Formulario de publicación de nuevos eventos</li>
+              <li>Interfaz responsive adaptada a móvil, tablet y escritorio</li>
+            </ul>
+
+            <ul class="tech-tags" aria-label="Tecnologías usadas">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://github.com/carlosmariov98-hue/proyecto_eventosHub_carlosV_yeimer_hamilton"
+                class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">
+                Ver repositorio
+              </a>
+              <a href="#" class="btn btn-small btn-outline is-placeholder" aria-disabled="true">
+                Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
+        <div class="section-heading">
+          <h2 id="contact-title">Hablemos</h2>
+          <p class="section-lead">
+            "Siempre dispuesto a asumir nuevos retos y seguir creciendo como desarrollador. ¿Tienes un proyecto desafiante, una idea que construir o retroalimentación para compartir? ¡Conectemos!"
+          </p>
+        </div>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Correo</span>
+            <a href="mailto:tucorreo@ejemplo.com">carlosmariov98@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/carlosmariov98-hue/mi_hoja_de_vida/blob/main/README.md" target="_blank" rel="noopener noreferrer">github</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Carlos Mario · Estudiante de Desarrollo de Software en CampusLand</p>
+      <a href="#inicio" class="back-to-top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
