@@ -1,77 +1,97 @@
-# Portafolio — Entrega 1
+# ⚡ Portafolio Digital — Carlos Velásquez
+> *Construyendo la arquitectura web del mañana con rendimiento extremo y código limpio.*
 
-## Estructura
+<div align="center">
 
-```
-portfolio/
-├── index.html
+
+[![GitHub Repo](https://img.shields.io/badge/REPOSiTORIO-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/carlosmariov98-hue/PortafolioCarlosVelasquez)
+
+</div>
+
+---
+
+## 🛸 Visión General
+
+Este repositorio aloja la interfaz de mi **Portafolio Digital**: una Single-Page Application (SPA) nativa diseñada como mi hub de presentación técnica. El proyecto fue concebido bajo el paradigma de **Rendimiento Máximo, Accesibilidad Universal y Semántica Estricta**, traduciendo lógica de diseño en un producto web ligero y de alto impacto.
+
+---
+
+## 📸 Vista Previa del Sistema(Monitor y Movil)
+
+<div align="center">
+  <img src="./assets/pantalla-completa.png" alt="Vista de escritorio del portafolio" width="700">
+  <br><br>
+  <img src="./assets/pantalla-movil.png" alt="Vista móvil del portafolio" width="230">
+</div>
+
+---
+
+## ⚡ Especificaciones Técnicas y Capacidades
+
+* **Diseño Ultra-Responsivo:** Arquitectura fluida implementada con **CSS Grid & Flexbox**, garantizando adaptación perfecta desde displays 4K hasta pantallas móviles.
+* **Semántica Web y A11y:** Maquetación limpia basada en etiquetas HTML5 puras (`header`, `nav`, `main`, `section`, `footer`) enriquecida con atributos `aria-*` y navegación accesible por teclado.
+* **Control de UI Dinámico:** Menú interactivo con interceptor de scroll (*ScrollSpy*) en vanilla JavaScript y menú hamburguesa optimizado para dispositivos táctiles.
+* **Optimización de Recursos:** Zero dependencias pesadas, carga diferida de imágenes (`loading="lazy"`) en formatos WebP/SVG y consumo mínimo de memoria en renderizado.
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Tecnología | Rol en la Arquitectura |
+| :--- | :--- |
+| **HTML5** | Estructura semántica, accesibilidad WAI-ARIA y SEO nativo |
+| **CSS3** | Sistema de diseño, variables CSS, animaciones y maquetación responsive |
+| **JavaScript (ES6+)** | Lógica de interacción, manipulaciones del DOM y navegación activa |
+| **Google Fonts** | Tipografía técnica de alta legibilidad (*Space Grotesk / Inter*) |
+| **GitHub Pages** | Infraestructura de despliegue continuo (CI/CD) |
+
+---
+
+## 📂 Arquitectura del Proyecto
+
+```bash
+Portafolio/
+├── index.html          # Punto de entrada principal (DOM)
 ├── css/
-│   └── styles.css
+│   └── styles.css      # Motor de estilos, tokens y responsive design
 ├── js/
-│   └── main.js
+│   └── main.js         # Lógica interactiva y manipulaciones
 ├── assets/
-│   ├── favicon.svg
-│   └── eventoshub-preview.svg
-└── README.md
-```
+│   ├── favicon.svg     # Identificador visual vectorial
+│   └── login admin.jpeg # Recursos visuales
+└── README.md           # Documentación del sistema
 
-## Antes de subirlo, edita esto
+⚡ Ejecución en Entorno Local
+El proyecto se ejecuta en un entono web sin necesidad de compilar o instalar dependencias externas.
 
-- `index.html`: reemplaza `tucorreo@ejemplo.com` y el placeholder de LinkedIn en la sección **Contacto**.
-- `index.html`: si tienes foto o una captura real de EventosHub, reemplaza `assets/eventoshub-preview.svg` por tu imagen (expórtala en `.webp`, mantén el `width`/`height` y el atributo `loading="lazy"` para que la carga siga siendo rápida).
-- Cuando actives GitHub Pages en el repo de EventosHub, cambia el botón "Demo (próximamente)" por el link real.
+Clonar el repositorio:
 
-## Cómo subirlo con Git Flow + Conventional Commits
+Bash
+git clone [https://github.com/carlosmariov98-hue/PortafolioCarlosVelasquez.git](https://github.com/carlosmariov98-hue/PortafolioCarlosVelasquez.git)
+Acceder al directorio:
 
-Trabaja en una rama de feature y ve haciendo commits pequeños y descriptivos, por ejemplo:
+Bash
+cd PortafolioCarlosVelasquez
+Desplegar servidor local:
 
-```bash
-git checkout -b develop
-git checkout -b feature/portfolio-onepage
+Bash
+# Opción 1: Mediante npx
+npx serve .
 
-git add index.html
-git commit -m "feat: agregar estructura semántica del one page"
+# Opción 2: Usar la extensión Live Server en VS Code
+🚀 Despliegue e Infraestructura
+El sitio se encuentra sincronizado con GitHub Pages desde la rama main.
 
-git add css/styles.css
-git commit -m "style: agregar diseño responsive y paleta de color"
+🔗 Enlace a producción: https://carlosmariov98-hue.github.io/PortafolioCarlosVelasquez/
 
-git add js/main.js
-git commit -m "feat: agregar menú móvil y navegación activa"
+Configuración de despliegue:
 
-git add assets/
-git commit -m "feat: agregar imágenes optimizadas del proyecto EventosHub"
+Source: Branch: main | Folder: / (root)
 
-git add README.md
-git commit -m "docs: agregar instrucciones de despliegue"
-```
+📦 Proyectos Destacados en el Portafolio
+EventosHub: Plataforma web completa diseñada para descubrir, publicar y gestionar eventos interactivos con interfaz responsiva y filtrado dinámico.
 
-Luego integra a `develop` y de ahí a `main`:
+🌐 Conexión & Contacto
+Desarrollado por Carlos Velásquez
 
-```bash
-git checkout develop
-git merge feature/portfolio-onepage
-git checkout main
-git merge develop
-```
-
-## Desplegar en GitHub Pages
-
-1. Sube el proyecto a un repositorio en GitHub (puede ser este mismo repo o uno nuevo llamado, por ejemplo, `portafolio`).
-
-   ```bash
-   git remote add origin https://github.com/tu-usuario/tu-repo.git
-   git push -u origin main
-   ```
-
-2. En GitHub, ve a **Settings → Pages**.
-3. En **Source**, selecciona la rama `main` y la carpeta `/ (root)`.
-4. Guarda. En un par de minutos tu sitio estará disponible en:
-   `https://tu-usuario.github.io/tu-repo/`
-
-## Prefijos de Conventional Commits usados
-
-- `feat`: una funcionalidad nueva
-- `fix`: una corrección
-- `style`: cambios de estilos/CSS que no alteran la lógica
-- `docs`: cambios en documentación (como este README)
-- `refactor`: reorganizar código sin cambiar su comportamiento
+Estudiante de Desarrollo de Software · CampusLands
